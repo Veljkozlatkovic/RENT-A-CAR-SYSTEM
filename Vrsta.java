@@ -1,3 +1,3 @@
 public enum Vrsta {
-    HEČBEK,LIMUZINA,KUPE,KOMBI,ČETVOROTOČAŠ,SUV,KAMIONET; // vrv ima jos
+    HEČBEK,LIMUZINA,KUPESPORT,KOMBI,ČETVOROTOČKAŠ,SUV,KAMIONET; // vrv ima jos kojih mogu da stavim
 }

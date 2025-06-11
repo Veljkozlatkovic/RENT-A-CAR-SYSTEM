@@ -1,2 +1,2 @@
-public class kvadBuggy extends Vozilo{
+public class kvadBuggy/* extends Vozilo*/{
 }
