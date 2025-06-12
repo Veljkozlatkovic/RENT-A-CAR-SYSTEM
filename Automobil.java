@@ -1,9 +1,16 @@
+import java.awt.image.BufferedImage;
+
 public class Automobil extends Vozilo{
     private int brojSedista;
 
-    public Automobil(Marka marka,String modelVozila,Double cenaPoDanu, int brojDostupnih, VrstaGoriva vrstaGoriva,Vrsta vrstaVozila, int brojSedista){
-        super(marka,modelVozila,cenaPoDanu,brojDostupnih,vrstaGoriva,vrstaVozila);
+    public Automobil(Marka marka, String modelVozila, Double cenaPoDanu, int brojDostupnih, VrstaGoriva vrstaGoriva, Vrsta vrstaVozila, int brojSedista,String imagePath){
+        super(marka,modelVozila,cenaPoDanu,brojDostupnih,vrstaGoriva,vrstaVozila,imagePath);
         this.brojSedista = brojSedista;
+    }
+
+    @Override
+    public String getImagePath() {
+        return super.getImagePath();
     }
 
     @Override
@@ -42,6 +49,6 @@ public class Automobil extends Vozilo{
 
     @Override
     public String toString() {
-        return super.toString() + " Broj sedista:" + brojSedista;
+        return super.toString();
     }
 }

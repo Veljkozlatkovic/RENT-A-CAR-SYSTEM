@@ -2,10 +2,15 @@ public class KombiKamionet extends Vozilo{// ova dva su spojena jer oba imaju no
     private double nosivostUTonama;
     private double zapremina;
 
-    public KombiKamionet(Marka marka,String modelVozila,double cenaPoDanu, VrstaGoriva vrstaGoriva,Vrsta vrstaVozila, int brojDostupnih,double nosivostUTonama, double zapremina){
-        super(marka,modelVozila,cenaPoDanu,brojDostupnih,vrstaGoriva,vrstaVozila);
+    public KombiKamionet(Marka marka,String modelVozila,double cenaPoDanu, VrstaGoriva vrstaGoriva,Vrsta vrstaVozila, int brojDostupnih,double nosivostUTonama, double zapremina,String imagePath){
+        super(marka,modelVozila,cenaPoDanu,brojDostupnih,vrstaGoriva,vrstaVozila,imagePath);
         this.nosivostUTonama = nosivostUTonama;
         this.zapremina = zapremina;
+    }
+
+    @Override
+    public String getImagePath() {
+        return super.getImagePath();
     }
 
     @Override
@@ -48,6 +53,6 @@ public class KombiKamionet extends Vozilo{// ova dva su spojena jer oba imaju no
 
     @Override
     public String toString() {
-        return super.toString() + " Nosivost(T):" + nosivostUTonama + " Zapremina(m^3):" + zapremina ;
+        return super.toString() ;
     }
 }
